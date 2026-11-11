@@ -1,4 +1,4 @@
-# SSH & Machines
+# SSH and Machines
 
 ![Latest release](https://img.shields.io/github/v/release/GoblinRules/ecpa-ssh-machines)
 
@@ -14,7 +14,7 @@ Add this public registry in ECPA's plugin settings:
 https://raw.githubusercontent.com/GoblinRules/ecpa-plugins/master/registry.json
 ```
 
-Refresh the Plugin store and install **SSH & Machines**. Existing users keep the same registry URL and plugin ID. Restart the core when prompted. Windows x64 binaries are available under [Releases](https://github.com/GoblinRules/ecpa-ssh-machines/releases).
+Refresh the Plugin store and install **SSH and Machines**. Existing users keep the same registry URL and plugin ID. Restart the core when prompted. Windows x64 binaries are available under [Releases](https://github.com/GoblinRules/ecpa-ssh-machines/releases).
 
 ## Documentation
 
@@ -48,3 +48,13 @@ This plugin has its own version history; its version does not need to match othe
 Connections Manager 0.8.0 and gateway 0.2.0 can reuse saved, verified machines for fixed diagnostics and individually approved service restarts. No arbitrary agent shell or per-machine executable is introduced.
 
 See the [Windows setup and upgrade runbook](https://github.com/GoblinRules/ecpa-plugins/blob/master/runtime/mcp-gateway/HOST-READINESS.md) for runtime identity, side-by-side upgrades and pending central-host acceptance checks.
+
+## 0.2.1 login and sidebar update
+
+Optional **Remember key on this device** reuses the suite management key on the same
+browser origin. **Lock & forget** clears the SSH tab key and shared saved key.
+Browser storage is not encrypted; use it only on a trusted device. Automatic unlock
+only reads the catalogue. SSH private keys remain with OpenSSH.
+
+The display name is now **SSH and Machines**, avoiding escaped ampersands in ECPA's
+sidebar. The plugin ID and existing machine profiles are unchanged.

@@ -1,6 +1,6 @@
 {
   "id": "ssh-machines",
-  "name": "SSH & Machines",
+  "name": "SSH and Machines",
   "sourceRepository": "https://github.com/GoblinRules/ecpa-plugins",
   "sourcePath": "plugins/ssh-machines",
   "registry": "https://raw.githubusercontent.com/GoblinRules/ecpa-plugins/master/registry.json"
