@@ -42,3 +42,9 @@ Each release includes the DLL ZIP, SHA-256 checksums, `release.json` with its so
 Bump only `plugins/ssh-machines/Cargo.toml` in the source workspace, keep its runtime version and dependency metadata in sync, test, commit and push. Run **Actions → Publish plugin release** here with the full 40-character source commit SHA. The workflow builds only this plugin and publishes its version using this repository's own GitHub Actions token. No cross-repository token or token for end users is required.
 
 This plugin has its own version history; its version does not need to match other plugins.
+
+## 0.2.0 integration update
+
+Connections Manager 0.8.0 and gateway 0.2.0 can reuse saved, verified machines for fixed diagnostics and individually approved service restarts. No arbitrary agent shell or per-machine executable is introduced.
+
+See the [Windows setup and upgrade runbook](https://github.com/GoblinRules/ecpa-plugins/blob/master/runtime/mcp-gateway/HOST-READINESS.md) for runtime identity, side-by-side upgrades and pending central-host acceptance checks.
